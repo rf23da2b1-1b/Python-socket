@@ -11,7 +11,7 @@ clientSocket.connect( (serverName,serverPort) )
 # læser input fra skærm/tastetur
 sentence = input('Input : ')
 
-sentence = sentence + '\r\n'
+sentence = sentence + '\r\n' # '\r\n' er for at lave et linjeskift så det også virker med en c# server
 byteSentence = sentence.encode() # laver tegn til byte
 clientSocket.send(byteSentence)
 
